@@ -1,0 +1,13 @@
+mycommand
+
+if NOT ["%errorlevel%"]==["0"] GOTO :ERRORHDL
+
+:ERRORHDL
+
+echo "Unresolvable error detected. Terminating"
+
+pause
+
+:: EOF terminates
+
+GOTO :EOF
